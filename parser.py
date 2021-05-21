@@ -96,8 +96,8 @@ else:
 
 URL = 'https://tatarinova0903.github.io'
 session2 = requests.Session()
-data = {'login': 'Dasha'}
+data = {'name': 'Dasha'}
 r = session2.post(LOGIN_URL, data=data)
 print("RETURNED CODE:", r)
-print(session2.get(URL).text)
+print(requests.post(URL , data).text)
 
